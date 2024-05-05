@@ -175,7 +175,7 @@ class UI : JFrame(), ActionListener {
         try {
             val files = folder.listFiles()
             files?.forEach { file ->
-                if (file.isFile && file.canRead())//&& file.extension.equals("txt", ignoreCase = true)}
+                if (file.isFile && file.extension.equals("txt", ignoreCase = true)) //&& file.canRead())
                 {
                     fileListModel.addElement(file.name)
                 }

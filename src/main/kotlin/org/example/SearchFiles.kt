@@ -63,7 +63,7 @@ class SearchFiles{
 
     private fun getFilesFromFolder(folderPath: String): List<File> {
         val folder = File(folderPath)
-        return folder.listFiles { file -> file.isFile && file.canRead() } //&& file.extension.equals("txt", ignoreCase = true)}
+        return folder.listFiles { file -> file.isFile &&  file.extension.equals("txt", ignoreCase = true)} //&& file.canRead()}
             ?.toList() ?: emptyList()
     }
 
